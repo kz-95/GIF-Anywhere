@@ -4,7 +4,7 @@
 
 <p align="center">A GIF button in every text box. Search Tenor and drop a GIF into Discord, Facebook, X, WhatsApp, ChatGPT and more.</p>
 
-<p align="center"><img src="store/screenshot-1.png" width="720" alt="The GIF picker open over a chat box, showing search results"></p>
+<p align="center"><img src="store/demo.gif" width="720" alt="Demo: typing in a chat box, clicking the GIF button, searching, and the picked GIF appearing in the chat"></p>
 
 ## Use
 
@@ -57,6 +57,7 @@ powershell -File store/build-zip.ps1
 - `tests/e2e.cjs` loads the extension into your installed Edge (pass `chrome` for Chrome) on a fake chat
   page with a strict Content-Security-Policy. It searches the real tenor.com but posts nothing.
 - `store/make-assets.cjs` renders the icons, the store screenshot and the promo tile.
+- `store/make-demo.cjs` records `store/demo.gif` (needs ffmpeg on PATH).
 - `store/build-zip.ps1` packs `extension/` into the zip you upload to the Chrome Web Store.
 
 ## License
