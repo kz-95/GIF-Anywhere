@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>GIF picker</title>
+<style>
+  :root { color-scheme: dark; --bg: #212121; --fg: #f1f1f1; --muted: #aaa; --field: #121212; --accent: #3ea6ff; }
+  html, body { height: 100%; margin: 0; }
+  body { display: flex; flex-direction: column; background: var(--bg); color: var(--fg); font: 14px system-ui, sans-serif; }
+  header { display: flex; gap: 8px; align-items: center; padding: 10px; }
+  input[type=search] { flex: 1; min-width: 0; padding: 8px 12px; border: 1px solid #555; border-radius: 18px; background: var(--field); color: inherit; font: inherit; }
+  label { display: flex; gap: 4px; align-items: center; color: var(--muted); font-size: 12px; white-space: nowrap; cursor: pointer; }
+  .close { border: 0; background: none; color: inherit; font-size: 18px; cursor: pointer; }
+  .status { padding: 0 10px 8px; color: var(--muted); }
+  /* Scroll on a wrapper: a multi-column box with a fixed height overflows sideways. */
+  .scroll { flex: 1; min-height: 0; overflow-y: auto; overscroll-behavior: contain; }
+  .grid { columns: 2; column-gap: 6px; padding: 0 10px 10px; }
+  .grid button { display: block; width: 100%; margin: 0 0 6px; padding: 0; border: 0; border-radius: 6px; overflow: hidden; background: var(--field); cursor: pointer; }
+  .grid button:focus-visible { outline: 3px solid var(--accent); }
+  img { display: block; width: 100%; }
+</style>
+</head>
+<body>
+  <header>
+    <input type="search" placeholder="Search Tenor GIFs" aria-label="Search Tenor GIFs">
+    <label title="Type the Tenor link instead of pasting the GIF file. Discord, X and WhatsApp show Tenor links as GIFs."><input type="checkbox" id="link"> Link</label>
+    <button type="button" class="close" aria-label="Close">✕</button>
+  </header>
+  <div class="status" role="status">Type to search Tenor.</div>
+  <div class="scroll"><div class="grid"></div></div>
+  <script src="tenor.js"></script>
+  <script src="picker.js"></script>
+</body>
+</html>

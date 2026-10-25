@@ -1,0 +1,11 @@
+{
+  "name": "gif-anywhere-tests",
+  "private": true,
+  "description": "Browser test and store-asset tooling for GIF Anywhere. Not part of the extension.",
+  "scripts": {
+    "test": "node e2e.cjs msedge"
+  },
+  "devDependencies": {
+    "playwright-core": "^1.56.0"
+  }
+}
