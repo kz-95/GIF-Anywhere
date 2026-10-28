@@ -1,13 +1,14 @@
 # Chrome Web Store listing for GIF Anywhere
 
 Copy each part into the matching field of the developer dashboard.
+Do not list site or brand names: the store rejected 1.0.0 for "keyword spam" over such a list.
 
 ## Store listing tab
 
 **Name:** GIF Anywhere
 
 **Summary (132 chars max):**
-A GIF button in every text box. Search Tenor and drop a GIF into Discord, Facebook, X, WhatsApp, ChatGPT and more.
+A GIF button in every text box. Search Tenor and drop a GIF into the chat, comment or post you are writing.
 
 **Category:** Social & Communication
 
@@ -21,7 +22,7 @@ How it works
 • The GIF is pasted into your box like a copied image. Tick "Link" to insert the Tenor link instead; the choice is remembered per site.
 • Click the toolbar icon to turn GIF Anywhere on or off.
 
-Works on sites such as Discord, Facebook, Messenger, X, Threads, Instagram, WhatsApp Web, ChatGPT, Claude and Gemini.
+Works in chat apps, social media comments and AI chat boxes that accept pasted images.
 
 Privacy
 • No account, no tracking, no ads.
